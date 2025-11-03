@@ -19,9 +19,68 @@
 - type: trait
   id: ConnectionExtraFood
   category: Physical
-  points: -1
+  points: -3
   functions:
     - !type:TraitReplaceComponent
       components:
         - type: Hunger
-          currentHunger: 200
+          baseDecayRate: 0.004
+
+- type: trait
+  id: ConnectionExtraWater
+  category: Physical
+  points: -3
+  functions:
+    - !type:TraitReplaceComponent
+      components:
+        - type: Thirst
+          baseDecayRate: 0.05
+
+- type: trait
+  id: ConnectionLastBreath
+  category: Physical
+  points: -4
+  functions:
+    - !type:TraitReplaceComponent
+      components:
+        - type: SlowOnDamage
+          speedModifierThresholds:
+            60: 0.75
+            80: 0.55
+            90: 1
+
+- type: trait
+  id: ConnectionCrawlingExercises
+  category: Physical
+  points: -3
+  functions:
+    - !type:TraitReplaceComponent
+      components:
+        - type: LayingDown
+          lyingSpeedModifier: 0.3
+
+- type: trait
+  id: ConnectionNoSlipLegs
+  category: Physical
+  points: -10
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: NoSlip
+
+- type: trait
+  id: ConnectionHookHands
+  category: Physical
+  points: -8
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: MeleeThrowOnHit
+          lifetime: 0.5
+          speed: -15
+    - !type:TraitModifyUnarmed
+      attackRateModifier: 3
+      rangeModifier: 10
+      flatDamageIncrease:
+        types:
+          Blunt: -4
