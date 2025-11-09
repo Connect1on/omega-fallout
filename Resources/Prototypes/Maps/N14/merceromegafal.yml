@@ -1,14 +1,14 @@
 - type: gameMap
   id: OmegaMercer
-  mapName: 'Остров Мерсера Омега'
-  mapPath: /Maps/N14/MercerOmegaFal.yml
+  mapName: 'Омега Мерсер'
+  mapPath: /Maps/N14/RemasterOmegaMercerIsland.yml
   minPlayers: 0
   stations:
     Sunnyvale:
       stationProto: FalloutStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Остров Мерсера Омега'
+          mapNameTemplate: 'Омега Мерсер'
         - type: CP14StationAdditionalMap
         - type: StationJobs
           overflowJobs:
