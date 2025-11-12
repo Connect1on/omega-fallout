@@ -41,6 +41,10 @@
   category: Physical
   points: -4
   functions:
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - N14LifeTaker
     - !type:TraitReplaceComponent
       components:
         - type: SlowOnDamage
@@ -73,6 +77,17 @@
   category: Physical
   points: -8
   functions:
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - N14BadReflexes
+        - N14WorldChampion
+        - N14LightningHands
+        - N14Blitz
+        - N14ShortArms
+        - N14RadClaws
+        - N14IronFist
+        - N14PillowKnuckles
     - !type:TraitAddComponent
       components:
         - type: MeleeThrowOnHit
@@ -81,6 +96,3 @@
     - !type:TraitModifyUnarmed
       attackRateModifier: 3
       rangeModifier: 10
-      flatDamageIncrease:
-        types:
-          Blunt: -4

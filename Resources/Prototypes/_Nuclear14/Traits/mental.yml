@@ -21,7 +21,7 @@
     - !type:CharacterTraitRequirement
       inverted: true
       traits:
-        - ConnectionSlowHands
+        - ConnectionSlowHands #Connection
   functions:
     - !type:TraitReplaceComponent
       components:
