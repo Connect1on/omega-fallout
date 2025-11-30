@@ -397,7 +397,7 @@
       shoes: N14ClothingPABootsDark
       back: N14ClothingPowerSystemsBack
   - type: Reflect
-    reflectProb: 0.3
+    reflectProb: 0.35
 
 - type: entity
   parent: N14ClothingOuterPowerArmorT45
