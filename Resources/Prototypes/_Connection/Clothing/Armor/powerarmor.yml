@@ -1,0 +1,43 @@
+- type: entity
+  parent: N14ClothingOuterPowerArmorMidwestCommander
+  id: VorsisClothingOuterPowerArmorMidwestCommanderFem
+  name: Силовая броня Средне-Западного Братства Командирши
+  description: Версия силовой брони, предназначенной для женской особы
+  components:
+  - type: Sprite
+    sprite: _Vorsis/SEXCOMMANDER.rsi
+  - type: Clothing
+    sprite: _Vorsis/SEXCOMMANDER.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.45
+        Slash: 0.45
+        Piercing: 0.5
+        Heat: 0.5
+        Caustic: 0.75
+        Radiation: 0.6
+  - type: Storage
+    grid:
+    - 0,0,2,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
+  - type: HideLayerClothing
+    force: true
+    slots:
+    - LFoot
+    - RFoot
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: N14ClothingHeadHelmetPowerArmorMidwestCommander
+      gloves: N14ClothingPAGauntletsMBoS
+      shoes: N14ClothingPABootsMBoS
+      back: N14ClothingPowerSystemsBack

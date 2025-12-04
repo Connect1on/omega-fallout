@@ -1,0 +1,27 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: VorsisClothingOuterChineseStealthSuit
+  name: стелс-броня СЗБС
+  description: Довоенный комплект стелс-брони Китайского производства, найденный экспедиционными группами СЗБС и отправленный в Убежище ноль для изучения, восстановления и дальнейшего использования паладинами-командорами. # Someone translate this shit back to English.
+  components: # Oh and it wouldn't hurt to make this actially functioning stealth suit :P
+  - type: Sprite
+    sprite: _Vorsis/stealtharmor.rsi
+  - type: Clothing
+    sprite: _Vorsis/stealtharmor.rsi
+  - type: ToggleableClothing
+    clothingPrototype: VorsisClothingHeadHatHelmetBSStealthSuitHelmet
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.8
+        Piercing: 0.75
+        Heat: 0.7
+        Radiation: 0.6
+  - type: TemperatureProtection
+    coefficient: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
