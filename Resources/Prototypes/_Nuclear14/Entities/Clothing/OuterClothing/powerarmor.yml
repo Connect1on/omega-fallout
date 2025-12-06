@@ -55,7 +55,7 @@
     sprintModifier: 0.5
   - type: MultiHandedItem
   - type: Reflect
-    reflectProb: 0.1
+    reflectProb: 0.25
     spread: 150
   - type: EmitsSoundOnMove # Corvax-Change
     soundCollection:
@@ -184,7 +184,7 @@
       shoes: N14ClothingPABootsDark
       back: N14ClothingPowerSystemsBack
   - type: Reflect
-    reflectProb: 0.15
+    reflectProb: 0.3
 
 - type: entity
   parent: N14ClothingOuterPowerArmorAdvanced1
@@ -221,7 +221,7 @@
       shoes: N14ClothingPABootsDark
       back: N14ClothingPowerSystemsBack
   - type: Reflect
-    reflectProb: 0.125
+    reflectProb: 0.22
 
 - type: entity
   parent: N14ClothingOuterPowerArmorAdvanced2
@@ -287,7 +287,7 @@
       shoes: N14ClothingPABootsDark
       back: N14ClothingPowerSystemsBack
   - type: Reflect
-    reflectProb: 0.075
+    reflectProb: 0.15
   - type: ClothingSpeedModifier # Forge-Change
     walkModifier: 0.15
     sprintModifier: 0.15
@@ -397,7 +397,7 @@
       shoes: N14ClothingPABootsDark
       back: N14ClothingPowerSystemsBack
   - type: Reflect
-    reflectProb: 0.1
+    reflectProb: 0.35
 
 - type: entity
   parent: N14ClothingOuterPowerArmorT45
@@ -433,7 +433,7 @@
       shoes: N14ClothingPABoots
       back: N14ClothingPowerSystemsBack
   - type: Reflect
-    reflectProb: 0.075
+    reflectProb: 0.15
 
 - type: entity
   parent: N14ClothingOuterPowerArmorT51
@@ -457,7 +457,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.55
   - type: Reflect
-    reflectProb: 0.1
+    reflectProb: 0.2
 
 - type: entity
   parent: N14ClothingOuterPowerArmorT45
@@ -491,7 +491,7 @@
       shoes: N14ClothingPABoots
       back: N14ClothingPowerSystemsBack
   - type: Reflect
-    reflectProb: 0.125
+    reflectProb: 0.3
 
 - type: entity
   parent: N14ClothingOuterPowerArmorWashT51
