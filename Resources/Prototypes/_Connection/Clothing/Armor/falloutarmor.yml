@@ -25,3 +25,46 @@
     coefficient: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.8
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: M1nXXClothingOuterLightMetalArmor
+  name: модифицированная разведывательная броня
+  description: Модифицированная разведывательная броня.
+  components:
+  - type: Sprite
+    sprite: _M1nXX/modifiedscoutarmor.rsi
+  - type: Clothing
+    sprite: _M1nXX/modifiedscoutarmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.75
+        Piercing: 0.8
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+  - type: StaticPrice # Forge-Add
+    price: 20
+
+- type: entity
+  parent: N14ClothingOuterRangerCombat
+  id: M1nXXClothingOuterRangerElite # Admin event gear (OP)
+  name: элитная броня пустынного рейнджера
+  description: модифицированный комплект штурмовой брони морской пехоты.
+  components:
+  - type: Sprite
+    sprite: _M1nXX/elitearmordesertranger.rsi
+  - type: Clothing
+    sprite: _M1nXX/elitearmordesertranger.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.6
+        Heat: 0.6
+    priceMultiplier: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.7

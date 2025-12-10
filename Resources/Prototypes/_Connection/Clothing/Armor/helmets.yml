@@ -29,3 +29,50 @@
     - type: Stealth
       minVisibility: 0.1
       lastVisibility: 0.1
+
+- type: entity
+  parent: N14ClothingHeadHatBaseHelmetMetal
+  id: VorsisClothingHeadHatHeavyHelmet
+  name: тяжёлый шлем штурмовика
+  description: Сделанный на базе стандартного шлема довоенной армии США МК1, укреплённый отделанной кожей браминов и устрашающими шипами из стали. Броня не пробита, рикошет!
+  components:
+  - type: Sprite
+    sprite: _Vorsis/heavyhelmet.rsi
+  - type: Clothing
+    sprite: _Vorsis/heavyhelmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.85
+        Piercing: 0.9
+        Heat: 0.95
+    priceMultiplier: 0.5
+
+- type: entity
+  parent: N14ClothingHeadHatBaseHelmetMK2
+  id: M1nXXClothingHeadHatRangerHelmet
+  name:  боевой шлем пустынного рейнджера
+  description: Шлем морпехов США, доставшийся в наследство от легендарных пустынных рейнджеров. Настоящая реликвия, закаленная песком и временем.
+  components:
+  - type: Sprite
+    sprite: _M1nXX/assaulthelmetdesertranger.rsi
+  - type: Clothing
+    sprite: _M1nXX/assaulthelmetdesertranger.rsi
+  - type: Tag
+    tags:
+    - HidesHair
+
+- type: entity
+  parent: N14ClothingHeadHatBaseHelmetMK2
+  id: M1nXXClothingHeadHatDesertHelmet
+  name: боевой шлем рейнджера
+  description: Шлем рейнджера, охраняющего закон и порядок в самых отдалённых уголках пустоши.
+  components:
+  - type: Sprite
+    sprite: _M1nXX/deserthelmet.rsi
+  - type: Clothing
+    sprite: _M1nXX/deserthelmet.rsi
+  - type: Tag
+    tags:
+    - HidesHair

@@ -1,0 +1,20 @@
+- type: entity
+  parent: N14ClothingOuterBase
+  id: M1nXXClothingOuterCoatCombatDuster
+  name: пустынный плащ рейнджера
+  description: Броня в которой ходят герои пустоши.
+  components:
+  - type: Sprite
+    sprite: _M1nXX/desertcoatranger.rsi
+  - type: Clothing
+    sprite: _M1nXX/desertcoatranger.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.75
+        Heat: 0.7
+    priceMultiplier: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.7

@@ -41,3 +41,112 @@
       gloves: N14ClothingPAGauntletsMBoS
       shoes: N14ClothingPABootsMBoS
       back: N14ClothingPowerSystemsBack
+
+- type: entity
+  parent: N14ClothingOuterPowerArmorMidwestCommander
+  id: VorsisClothingOuterPowerArmorDesert
+  name: T-51D "Умиротворитель"
+  description: Легендарный комплект силовой брони модели T-51 Братства, серьёзно изношенный и модернизированный временем и трудом своего паладина за счёт запчастей многих роботов, когда то в нём брали Убежище ноль - в сегодняшнем дне в нём сокрушают врагов Пустынных рейнджеров. Покрытый шрамами от отражённых пуль, с устрашающими шипами налитые ядом, ржавчиной и с интегрированной системой в силовые кастеты инъекции поражающего ткани боевого вещества - ну чем он не памятник прошлому и будущему?
+  components:
+  - type: Sprite
+    sprite: _Vorsis/armorT51Bbs.rsi
+  - type: Clothing
+    sprite: _Vorsis/armorT51Bbs.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.45
+        Slash: 0.45
+        Piercing: 0.5
+        Heat: 0.5
+        Caustic: 0.75
+        Radiation: 0.6
+  - type: Storage
+    grid:
+    - 0,0,2,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
+  - type: HideLayerClothing
+    force: true
+    slots:
+    - LFoot
+    - RFoot
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: VorsisClothingHeadHelmetPowerArmorT51Desert
+      gloves: N14ClothingPAGauntletsMBoS
+      shoes: N14ClothingPABootsMBoS
+      back: N14ClothingPowerSystemsBack
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: VorsisClothingHeadHelmetPowerArmorT51Desert
+  name: Шлем T-51D "Умиротворитель"
+  description: Подобный ежу, видевший ад и рай тёмным визором за сотни проведённых боёв, всегда готов спасти голову оператора.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: _Vorsis/helmetT51Bbs.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+    - state: light-overlay
+      visible: false
+      shader: unshaded
+      map: [ "light" ]
+  - type: HandheldLight
+    addPrefix: false
+  - type: ToggleableLightVisuals
+    spriteLayer: light
+    inhandVisuals:
+      left:
+      - state: on-inhand-left
+      right:
+      - state: on-inhand-right
+    clothingVisuals:
+      head:
+      - state: on-equipped-HELMET
+  - type: PointLight
+    enabled: false
+    radius: 6
+    energy: 1
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
+  - type: Clothing
+    equipSound: # Corvax-Change
+      path: /Audio/_Nuclear14/Effects/PowerArmor/PowerArmor_Equip_Helmet_01.ogg
+      params:
+        volume: -12
+    unequipSound: # Corvax-Change
+      path: /Audio/_Nuclear14/Effects/PowerArmor/PowerArmor_Equip_Helmet_01.ogg
+      params:
+        volume: -12
+    quickEquip: true
+    clothingVisuals:
+      head:
+      - state: off-equipped-HELMET
+      - state: equipped-HELMET-unshaded
+  - type: EyeProtection
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.85
+        Heat: 0.85
+        Radiation: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard
