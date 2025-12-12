@@ -1,0 +1,21 @@
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterEliteDesertRangerArmor
+  name: Elite Desert Ranger 
+  description: "a modified set of Marine Corps assault armor.."
+  components:
+  - type: Sprite
+    sprite: Omega/Clothing/OuterClothing/Armor/EliteDesertRanger.rsi
+  - type: Clothing
+    sprite: Omega/Clothing/OuterClothing/Armor/EliteDesertRanger.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+
+

@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: N14ClothingHeadHatDesertRangerBattleHelmet
+  name: Боевой шлем пустынного рейнджера
+  description: "Шлем морпехов США, доставшийся в наследство от легендарных пустынных рейнджеров. Настоящая реликвия, закаленная песком и временем."
+  components:
+  - type: Sprite
+    sprite: Omega/Clothing/Head/FalloutHelmets/DesertRangerBattleHelmet.rsi
+  - type: Clothing
+    sprite: Omega/Clothing/Head/FalloutHelmets/DesertRangerBattleHelmet.rsi
+    tags:
+    - HidesHair
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
