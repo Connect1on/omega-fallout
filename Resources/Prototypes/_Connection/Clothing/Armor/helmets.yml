@@ -48,31 +48,3 @@
         Piercing: 0.9
         Heat: 0.95
     priceMultiplier: 0.5
-
-- type: entity
-  parent: N14ClothingHeadHatBaseHelmetMK2
-  id: M1nXXClothingHeadHatRangerHelmet
-  name:  боевой шлем пустынного рейнджера
-  description: Шлем морпехов США, доставшийся в наследство от легендарных пустынных рейнджеров. Настоящая реликвия, закаленная песком и временем.
-  components:
-  - type: Sprite
-    sprite: _M1nXX/assaulthelmetdesertranger.rsi
-  - type: Clothing
-    sprite: _M1nXX/assaulthelmetdesertranger.rsi
-  - type: Tag
-    tags:
-    - HidesHair
-
-- type: entity
-  parent: N14ClothingHeadHatBaseHelmetMK2
-  id: M1nXXClothingHeadHatDesertHelmet
-  name: боевой шлем рейнджера
-  description: Шлем рейнджера, охраняющего закон и порядок в самых отдалённых уголках пустоши.
-  components:
-  - type: Sprite
-    sprite: _M1nXX/deserthelmet.rsi
-  - type: Clothing
-    sprite: _M1nXX/deserthelmet.rsi
-  - type: Tag
-    tags:
-    - HidesHair

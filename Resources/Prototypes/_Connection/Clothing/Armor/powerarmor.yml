@@ -55,12 +55,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.5
-        Heat: 0.5
-        Caustic: 0.75
-        Radiation: 0.6
+        Blunt: 0.475
+        Slash: 0.475
+        Piercing: 0.525
+        Heat: 0.525
+        Caustic: 0.775
+        Radiation: 0.625
   - type: Storage
     grid:
     - 0,0,2,1
@@ -82,9 +82,50 @@
   - type: ToggleableClothing
     clothingPrototypes:
       head: VorsisClothingHeadHelmetPowerArmorT51Desert
-      gloves: N14ClothingPAGauntletsMBoS
+      gloves: VorsisClothingPAGauntlets
       shoes: N14ClothingPABootsMBoS
       back: N14ClothingPowerSystemsBack
+
+- type: entity
+  parent: ClothingHandsBase
+  id: VorsisClothingPAGauntlets
+  name: power armor gauntlets
+  description: A pair of power suit gauntlets for rough work and battle.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Nuclear14/Clothing/Hands/PowerGauntlets/basic.rsi
+    scale: 0.75, 0.75
+  - type: Clothing
+    equipSound: /Audio/Mecha/mechmove03.ogg
+    unequipSound: /Audio/Mecha/mechmove03.ogg
+    slots: gloves
+  - type: Insulated # Don't electrocute my Paladins!
+  - type: MeleeWeapon
+    soundHit:
+      collection: MetalThud
+    range: 1.1
+    attackRate: 1.0
+    damage:
+      types:
+        Blunt: 5
+        Piercing: 8
+        Poison: 10
+        Radiation: 5
+    animation: WeaponArcFist
+    wideAnimation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: MeleeThrowOnHit
+    speed: 10
+    lifetime: 0.025
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.925
+        Slash: 0.925
+        Piercing: 0.95
+        Heat: 0.95
 
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
