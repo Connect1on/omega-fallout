@@ -41,7 +41,6 @@
   description: Плакат Аризоны.
   components:
   - type: Sprite
-    sprite: Omega/Structures/Wallmounts/Posters/Arizona64x64.rsi
     state: Arizona02
 
 - type: entity
