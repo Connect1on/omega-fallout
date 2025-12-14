@@ -23,6 +23,11 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: N14FootstepPowerArmor
+  - type: HideLayerClothing
+    force: true
+    slots:
+    - LFoot
+    - RFoot
   - type: Matchbox
   - type: ItemSlots
     slots:

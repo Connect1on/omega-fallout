@@ -14,6 +14,21 @@
     sprite: _Nuclear14/Clothing/Back/PowerSystems/basic.rsi
     slots:
     - back
+  #Connection Edit Start
+  - type: Storage
+    grid:
+    - 0,0,6,3
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
+  #Connection Edit End
   - type: ClothingSpeedModifier
     walkModifier: 4.5 # Don't be alarmed, it's this high to compensate for the suit's base slowdown.
     sprintModifier: 4.5
