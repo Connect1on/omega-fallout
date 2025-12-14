@@ -1,0 +1,161 @@
+- type: entity
+  parent: BaseSign
+  id: N14PosterBase # For 64x64 posters
+  name: Poster
+  suffix: Mapping
+  abstract: true
+  components:
+  - type: WallMount
+    arc: 360
+  - type: Sprite
+    drawdepth: Overdoors
+    sprite: Omega/Structures/Wallmounts/Posters/Arizona64x64.rsi
+    scale: 0.45, 0.45
+    snapCardinals: true
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/poster_broken.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PosterBroken:
+            min: 1
+            max: 1
+        offset: 0
+  - type: Transform
+    anchored: true
+    noRot: true
+
+# Arizona+
+- type: entity
+  parent: N14PosterBase
+  id: N14PosterArizona02
+  name: Аризона
+  description: Плакат Аризоны.
+  components:
+  - type: Sprite
+    state: Arizona02
+
+- type: entity
+  parent: N14PosterBase
+  id: N14PosterArizonaposter
+  name: Аризона
+  description: Плакат Аризоны.
+  components:
+  - type: Sprite
+    state: Arizonaposter
+
+- type: entity
+  parent: N14PosterBase
+  id: N14PosterAssistantposter
+  name: Асистент
+  description: Плакат.
+  components:
+  - type: Sprite
+    state: Assistantposter
+
+- type: entity
+  parent: N14PosterBase
+  id: N14PosterDesertRangerposter
+  name: Пустынный рейджер.
+  description: Рейнджеры.. как же они любят заказывать плакаты у художников .
+  components:
+  - type: Sprite
+    state: DesertRangerposter
+  
+- type: entity
+  parent: N14PosterBase
+  id: N14Posterfuture2poster
+  name: Наука
+  description: Чето на умном.
+  components:
+  - type: Sprite
+    state: future2poster
+
+- type: entity
+  parent: N14PosterBase
+  id: N14Posterfuture3poster
+  name: Наука
+  description: Чето на умном.
+  components:
+  - type: Sprite
+    state: future3poster
+
+- type: entity
+  parent: N14PosterBase
+  id: N14Posterfuture4poster
+  name: Наука
+  description: Чето на умном.
+  components:
+  - type: Sprite
+    state: future4poster
+  
+- type: entity
+  parent: N14PosterBase
+  id: N14Posterfutureposter
+  name: Наука
+  description: Чето на умном.
+  components:
+  - type: Sprite
+    state: futureposter
+
+- type: entity
+  parent: N14PosterBase
+  id: N14Postergeeseposter
+  name: Гуси
+  description: Гуси....
+  components:
+  - type: Sprite
+    state: geeseposter
+  
+- type: entity
+  parent: N14PosterBase
+  id: N14Postergirl2poster
+  name: для бара самое то
+  description: для бара самое то.
+  components:
+  - type: Sprite
+    state: girl2poster
+  
+- type: entity
+  parent: N14PosterBase
+  id: N14Postergirl3poster
+  name: для бара самое то
+  description: для бара самое то.
+  components:
+  - type: Sprite
+    state: girl3poster
+  
+- type: entity
+  parent: N14PosterBase
+  id: N14Postergirl4poster
+  name: для бара самое то
+  description: для бара самое то.
+  components:
+  - type: Sprite
+    state: girl4poster
+  
+- type: entity
+  parent: N14PosterBase
+  id: N14Postergirlposter
+  name: для бара самое то
+  description: для бара самое то.
+  components:
+  - type: Sprite
+    state: girlposter
+  
+- type: entity
+  parent: N14PosterBase
+  id: N14PosterROKCposter
+  name: РОК!!
+  description: РОК!!.
+  components:
+  - type: Sprite
+    state: ROKCposter

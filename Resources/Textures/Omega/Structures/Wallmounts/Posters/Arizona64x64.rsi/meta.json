@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "license": "Custom",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "Arizonaposter"
+    },
+    {
+      "name": "Assistantposter"
+    },
+    {
+      "name": "DesertRangerposter"
+    },
+    {
+      "name": "future2poster"
+    },
+    {
+      "name": "future3poster"
+    },
+    {
+      "name": "future4poster"
+    },
+    {
+      "name": "futureposter"
+    },
+    {
+      "name": "geeseposter"
+    },
+    {
+      "name": "girl2poster"
+    },
+    {
+      "name": "girl3poster"
+    },
+    {
+      "name": "girl4poster"
+    },
+    {
+      "name": "girlposter"
+    },
+    {
+      "name": "ROKCposter"
+    },
+    {
+      "name": "Arizona02"
+    }
+  ]
+}
