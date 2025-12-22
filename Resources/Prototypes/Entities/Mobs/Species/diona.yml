@@ -106,11 +106,9 @@
     - Dead
   - type: LanguageKnowledge
     speaks:
-    - TauCetiBasic
-    - RootSpeak
+    - English
     understands:
-    - TauCetiBasic
-    - RootSpeak
+    - English
   - type: TraitSpeedModifier
     sprintModifier: 0.75
     walkModifier: 0.75

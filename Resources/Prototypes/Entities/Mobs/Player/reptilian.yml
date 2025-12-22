@@ -4,5 +4,9 @@
   suffix: Urisst' Mzhand
   parent: BaseMobReptilian
   id: MobReptilian
+  components:
+    - type: NpcFactionMember
+      factions:
+      - Wastelander
 
 #Weh

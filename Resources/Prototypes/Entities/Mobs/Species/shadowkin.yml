@@ -1,7 +1,6 @@
 - type: entity
   save: false
-  parent:
-    - BaseMobSpeciesOrganic
+  parent: BaseMobSpeciesOrganic
   id: MobShadowkinBase
   name: Urist McShadow
   abstract: true
@@ -228,11 +227,9 @@
         - TelepathyPower
     - type: LanguageKnowledge
       speaks:
-        - TauCetiBasic
-        - Marish
+      - English
       understands:
-        - TauCetiBasic
-        - Marish
+      - English
     - type: PotentiaModifier
       potentiaMultiplier: 1.25
     - type: Tag

@@ -114,11 +114,9 @@
     maxSaturation: 15
   - type: LanguageKnowledge
     speaks:
-    - TauCetiBasic
-    - Bubblish
+    - English
     understands:
-    - TauCetiBasic
-    - Bubblish
+    - English
   - type: FootPrints
     leftBarePrint: "footprint-left-bare-slime"
     rightBarePrint: "footprint-right-bare-slime"

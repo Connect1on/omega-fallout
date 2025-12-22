@@ -4,3 +4,7 @@
   parent: MobShadowkinBase
   id: MobShadowkin
   description: "Their barrel chest doesn't seem to rise and fall as quickly as a human's, how unnerving."
+  components:
+    - type: NpcFactionMember
+      factions:
+      - Wastelander

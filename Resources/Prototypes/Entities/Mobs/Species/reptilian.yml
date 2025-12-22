@@ -66,11 +66,9 @@
   - type: Wagging
   - type: LanguageKnowledge
     speaks:
-    - TauCetiBasic
-    - Draconic
+    - English
     understands:
-    - TauCetiBasic
-    - Draconic
+    - English
   - type: FootPrints
     leftBarePrint: "footprint-left-bare-lizard"
     rightBarePrint: "footprint-right-bare-lizard"

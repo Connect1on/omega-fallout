@@ -1,0 +1,85 @@
+- type: entity
+  parent: N14MobGecko
+  id: N14MobGeckoFireAlpha
+  name: Альфа Гекко
+  description: Опасный Альфа (самец?)
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: gecko
+      sprite: _Nuclear14/Mobs/Animals/firegecko.rsi
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    soundHit:
+        path: /Audio/Effects/bite.ogg
+    angle: 60
+    animation: WeaponArcBite
+    wideAnimation: WeaponArcBite
+    damage:
+      types:
+        Slash: 11                        # Forge-Change
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      350: Dead
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatGeckoFire
+      amount: 3
+    - id: N14MaterialHideGeckoFire
+      amount: 1
+  - type: Reproductive
+    breedChance: 0.05
+    birthPopup: reproductive-laid-egg-popup
+    makeOffspringInfant: false
+    partnerWhitelist:
+      tags:
+      - Gecko
+    offspring:
+    - id: N14FoodEggGeckoFertilized
+      maxAmount: 3
+  - type: ReproductivePartner
+  - type: EggLayer
+    eggSpawn:
+    - id: N14FoodEggGecko
+  - type: Tag
+    tags:
+    - Gecko
+  - type: Gun
+    cameraRecoilScalar: 0 #no recoil
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_Nuclear14/Weapons/Guns/Flames/flamer.ogg
+  - type: SolutionContainerManager
+    solutions:
+      chamber:
+        maxVol: 100
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 100
+  - type: SolutionAmmoProvider
+    solutionId: chamber
+    proto: FireProjectile
+  - type: SolutionRegeneration
+    solution: chamber
+    generated:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 1
+    duration: 0.1
+    nextChargeTime: 10
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+  - type: Flammable
+    fireSpread: false
+    canResistFire: true
+    firestackFade: -1
+  - type: Damageable
+    damageModifierSet: N14ScaleFireresist

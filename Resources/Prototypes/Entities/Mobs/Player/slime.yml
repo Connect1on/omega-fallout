@@ -2,3 +2,7 @@
   save: false
   parent: BaseMobSlimePerson
   id: MobSlimePerson
+  components:
+    - type: NpcFactionMember
+      factions:
+      - Wastelander

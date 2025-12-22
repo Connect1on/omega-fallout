@@ -26,11 +26,9 @@
     allowedEmotes: ['Chitter', 'Squeak']
   - type: LanguageKnowledge
     speaks:
-    - TauCetiBasic
-    - Moffic
+    - English
     understands:
-    - TauCetiBasic
-    - Moffic
+    - English
   - type: TypingIndicator
     proto: moth
   - type: Butcherable
